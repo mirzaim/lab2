@@ -41,6 +41,10 @@ public class Student {
     }
 
     public String getInfo(){
-        return "";
+        String result = "";
+        result += "Name: " + firstName + " " + lastName + "\n";
+        result += "Student ID: " + studentID + "\n";
+        result += "Grade: " + grade;
+        return result;
     }
 }
