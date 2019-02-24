@@ -5,7 +5,9 @@ public class Student {
     private float grade;
 
     public Student(String firstName, String lastName, String studentID){
-
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.studentID = studentID;
     }
 
     public void setFirstName(String firstName) {
