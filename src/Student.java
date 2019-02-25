@@ -49,4 +49,18 @@ public class Student {
         result += "Grade: " + grade;
         return result;
     }
+
+    public char getGradeScale(){
+        if (grade >= 17){
+            return 'A';
+        }else if (grade >= 15){
+            return 'B';
+        }else if (grade >= 12){
+            return 'C';
+        }else if (grade >= 10){
+            return 'D';
+        }else {
+            return 'F';
+        }
+    }
 }
