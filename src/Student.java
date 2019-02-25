@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class Student {
     private String firstName;
     private String lastName;
@@ -46,7 +48,7 @@ public class Student {
         String result = "";
         result += "Name: " + firstName + " " + lastName + "\n";
         result += "Student ID: " + studentID + "\n";
-        result += "Grade: " + grade;
+        result += "Grade: " + (new DecimalFormat().format(grade));
         return result;
     }
 
