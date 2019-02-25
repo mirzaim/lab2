@@ -9,7 +9,7 @@ public class Lab {
     }
 
     public void enrollStudent(Student std) {
-        if(currentCapacity < students.length){
+        if (currentCapacity < students.length) {
             students[currentCapacity] = std;
             currentCapacity++;
         }
@@ -26,7 +26,7 @@ public class Lab {
             total += students[i].getGrade();
         }
 
-        return total/currentCapacity;
+        return total / currentCapacity;
     }
 
     public int getDayOfTheWeek() {
